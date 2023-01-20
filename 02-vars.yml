@@ -20,16 +20,6 @@
 
 ## vars_files can also be declared at task level
 
-- name: Declare a Variable in another file
-  hosts: all
-  connection: local
-  tasks:
-    - name: Declare var file variable on task level
-      ansible.builtin.debug:
-        msg: URL == {{URL}}
-
-
-
 - name: Declare a Variable at play level
   hosts: all
   connection: local
