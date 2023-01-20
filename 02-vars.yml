@@ -24,7 +24,7 @@
   hosts: all
   connection: local
   tasks:
-    - name: Declare vars_files on task level
+    - name: Declare var file variable on task level
       ansible.builtin.debug:
         msg: URL == {{URL}}
       vars_files:
