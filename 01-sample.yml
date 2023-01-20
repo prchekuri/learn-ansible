@@ -3,6 +3,7 @@
   tasks:
     - name: Print a Message
       ansible.builtin.debug:
+        #msg: Hello
         msg:
           - Hello World
           - Hello Universe
