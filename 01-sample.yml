@@ -3,4 +3,5 @@
   tasks:
     - name: Print a Message
       ansible.builtin.debug:
-        msg: Hello Universe
+        #msg: Hello Universe
+        msg: "line1 \n {{ Hello World }} \n line3 {{ var3 Hello Universe}}"
