@@ -27,8 +27,7 @@
     - name: Declare var file variable on task level
       ansible.builtin.debug:
         msg: URL == {{URL}}
-      vars_files:
-        - var.yml
+
 
 
 - name: Declare a Variable at play level
