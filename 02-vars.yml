@@ -27,7 +27,7 @@
     - name: Access a Variable from a file inside task
       ansible.builtin.debug:
         msg: URL == {{URL}}
-      include_vars: var.yml
+      ##include_vars: var.yml
 
 
 - name: Declare a Variable at task level
