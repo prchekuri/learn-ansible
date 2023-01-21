@@ -20,7 +20,18 @@
 
 ## vars_files can also be declared at task level
 
-- name: Declare a Variable at play level
+- name: Declare a Variable in file level
+  hosts: all
+  connection: local
+  tasks:
+    - name: Access a Variable from a file inside task
+      ansible.builtin.debug:
+        msg: URL == {{URL}}
+      vars_files:
+        var: var.yml
+
+
+- name: Declare a Variable at task level
   hosts: all
   connection: local
   tasks:
@@ -34,6 +45,6 @@
   hosts: all
   connection: local
   tasks:
-    - name: Access a variable from a file
+    - name: Access a variable from inv file
       ansible.builtin.debug:
         msg: URL == {{URL}}
