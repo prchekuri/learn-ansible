@@ -57,6 +57,7 @@
       ansible.builtin.debug:
         msg: Ansible Host Name == {{ ansible_fqdn }}
 
+## if the value starts with a variable(in this case it is 'out' and it is in json format)
 - name: Register a Variable
   hosts: all
   connection: local
@@ -66,5 +67,7 @@
       register: out
     - name: Print out
       ansible.builtin.debug:
-        msg: "{{ out }}"
+        msg:
+          - "{{ out }}"
+          - "{{ out.stdout }}"
 
