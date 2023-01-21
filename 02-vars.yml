@@ -73,5 +73,8 @@
     - name: Set a fact
       ansible.builtin.set_fact:
         OUTPUT: "{{ out.stdout }}"
+    - name: Read OUTPUT
+      ansible.builtin.debug:
+        msg: "{{ OUTPUT }}"
 
 
