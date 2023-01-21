@@ -45,6 +45,6 @@
   connection: local
   tasks:
     - name: Access a Variable from a file inside task
+      vars_files: var.yml
       ansible.builtin.debug:
-        vars_files: var.yml
         msg: URL == {{URL}}
