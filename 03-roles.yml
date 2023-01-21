@@ -4,6 +4,3 @@
   roles:
     - demo
 
-- name: Variable from roles
-  ansible.builtin.debug:
-    msg: URL == {{URL}}
