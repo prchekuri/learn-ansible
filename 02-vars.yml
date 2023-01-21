@@ -70,4 +70,8 @@
         msg:
           - "{{ out }}"
           - "{{ out.stdout }}"
+    - name: Set a fact
+      ansible.buitlin.set_fact:
+        OUTPUT: "{{ out.stdout }}"
+
 
