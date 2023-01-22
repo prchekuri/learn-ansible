@@ -8,3 +8,9 @@
       loop:
         - Apple
         - Banana
+    - name: Print Fruit Name & Quantity means Map
+      debug:
+        msg: Fruit Name is {{ item.name }}, & Quantity is {{ item.value }}
+      loop:
+        - {{ name: "Apple" , value: 100}}
+        - {{ name: "Banana" , value: 200}}
