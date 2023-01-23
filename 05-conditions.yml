@@ -1,0 +1,8 @@
+# Pass fruit_name from command line
+- name: Demo on Conditions
+  hosts: all
+  connection: local
+  tasks:
+    ansible.builtin.debug:
+      msg: Fruit_Name is "APPLE"
+    when: fruit_name == "apple"
