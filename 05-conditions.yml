@@ -5,5 +5,5 @@
   tasks:
     - name: String Conditions
       ansible.builtin.debug:
-          msg: Fruit_Name is "APPLE"
+          msg: Fruit_Name is APPLE
       when: fruit_name == "apple"
