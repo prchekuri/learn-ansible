@@ -18,3 +18,7 @@
       debug:
         msg: b is false
       when: b is false
+    - name: Print b
+      debug:
+        msg: b is {{ b }}
+
