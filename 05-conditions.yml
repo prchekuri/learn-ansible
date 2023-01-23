@@ -4,7 +4,7 @@
   connection: local
   vars:
     - a: 10
- #   - b: true
+    - b: false
   tasks:
     - name: String Conditions
       ansible.builtin.debug:
