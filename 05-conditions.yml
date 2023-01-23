@@ -16,7 +16,7 @@
       when: a > 5
     - name: Boolean Conditions
       debug:
-        msg: b is false
+        msg: b is {{ b }}
       when: b
     - name: Print b
       debug:
