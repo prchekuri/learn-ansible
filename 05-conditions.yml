@@ -17,7 +17,7 @@
     - name: Boolean Conditions
       debug:
         msg: b is {{ b }}
-      when: b
+      when: b is true
     - name: Print b
       debug:
         msg: b is {{ b }}
